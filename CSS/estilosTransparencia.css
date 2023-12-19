@@ -1,0 +1,111 @@
+/*ESTOS SON LOS ESTILOS GENERALES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-naranja: #AD6016;
+    --color-verde: #168d84;
+    --color-blanco: #fff;
+    --color-negro: #000;
+
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* Estilos específicos para el encabezado */
+
+.encabezadoTransparencia {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.encabezadoTransparencia h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.encabezadoTransparencia__span {
+    color: var(--color-verde);
+}
+
+.encabezadoTransparencia__parrafo {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.principalTransparencia {
+    padding: 20px;
+}
+
+.principalTransparencia__video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.principalTransparencia__video video {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border: 5px solid var(--color-blanco);
+}
+
+.principalTransparencia--seccion {
+    margin-bottom: 40px;
+}
+
+.principalTransparencia__titulo {
+    color: var(--color-verde);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.principalTransparencia--tabla {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.principalTransparencia__tabla {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.principalTransparencia__tabla th,
+.principalTransparencia__tabla td {
+    border: 1px solid var(--color-negro);
+    padding: 10px;
+    text-align: center;
+}
+
+.principalTransparencia__tabla th {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+}
+
+.principalTransparencia__tabla a {
+    text-decoration: none;
+    color: var(--color-verde);
+    font-weight: 600;
+}
