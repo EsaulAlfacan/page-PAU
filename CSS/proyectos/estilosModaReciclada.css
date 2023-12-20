@@ -1,0 +1,190 @@
+/*ESTOS SON LOS ESTILOS GENERALES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-naranja: #AD6016;
+    --color-verde: #168d84;
+    --color-blanco: #fff;
+    --color-negro: #000;
+
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.encabezadoModareciclada {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezadoModareciclada img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: unset;
+    position: absolute;
+
+}
+
+.encabezadoModareciclada h1 {
+    position: absolute;
+    font-size: 45px;
+    z-index: 100;
+    color: var(--color-blanco);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.principalModareciclada {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.principalModareciclada__textoPrincipal {
+    color: var(--color-negro);
+    font-size: 1.6em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-position: inside;
+
+}
+
+
+ul li {
+    list-style: none;
+    /* Quita el estilo de lista predeterminado */
+    position: relative;
+    /* Establece una posición relativa para los pseudo-elementos */
+    padding-left: 40px;
+    /* Añade espacio a la izquierda para el ícono */
+    margin-bottom: 10px;
+    /* Espacio debajo de cada elemento de la lista */
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/images/proyectos/patita.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+.principalModareciclada h6 {
+    color: var(--color-naranja);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.principalModareciclada__contenedorTexto {
+    color: var(--color-negro);
+    width: auto;
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: solid var(--color-naranja) 1px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.principalModareciclada__texto {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0.6em 2em;
+    border: var(--color-verde) solid 0.15em;
+    border-radius: 0.25em;
+    color: var(--color-verde);
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+}
+
+.button p {
+    z-index: 1;
+}
+
+.button:hover {
+    color: var(--color-naranja);
+}
+
+.button:active {
+    border-color: var(--color-naranja);
+}
+
+.button::after,
+.button::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: var(--color-verde);
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+}
+
+.button::before {
+    left: 0;
+    transform: translateX(-8em);
+}
+
+.button::after {
+    right: 0;
+    transform: translateX(8em);
+}
+
+.button:hover:before {
+    transform: translateX(-1em);
+}
+
+.button:hover:after {
+    transform: translateX(1em);
+}
+
+.button:active:before,
+.button:active:after {
+    background: var(--color-verde);
+}

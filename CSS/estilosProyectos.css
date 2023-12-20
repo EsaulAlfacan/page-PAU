@@ -1,0 +1,93 @@
+/*ESTOS SON LOS ESTILOS GENERALES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-naranja: #AD6016;
+    --color-verde: #168d84;
+    --color-blanco: #fff;
+    --color-negro: #000;
+
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+body {
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+header {
+    height: auto;
+    padding: 10px 40px;
+    letter-spacing: 3px;
+    margin: 0 0px 10px 0px;
+    border: solid var(--color-naranja) 5px;
+    border-radius: 0 0 20px 20px;
+    font-size: 14px;
+}
+
+.principalProyectos {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+.principalProyectos__contenedor {
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principalProyectos__contenedor:hover {
+    transform: scale(1.06);
+    box-shadow: 10px 15px 20px var(--color-verde);
+}
+
+.principalProyectos__contenedor a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.principalProyectos__contenedor a h5 {
+    padding: 10px;
+    font-size: 2.2em;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.principalProyectos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
