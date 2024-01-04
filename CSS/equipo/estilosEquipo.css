@@ -1,0 +1,147 @@
+/*ESTOS SON LOS ESTILOS GENERALES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-naranja: #AD6016;
+    --color-verde: #168d84;
+    --color-blanco: #fff;
+    --color-negro: #000;
+
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.encabezadoEquipo {
+    width: 100%;
+}
+
+.encabezadoEquipo__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+}
+
+.principalEquipo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(to top, rgba(22, 141, 132, .6), rgba(173, 96, 22, 0.7));
+}
+
+.principalEquipo__info {
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 25px 60px;
+}
+
+.principalEquipo__info h1 {
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: var(--color-blanco);
+    background-color: var(--color-verde);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.principalEquipo__info img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 20%;
+    box-shadow: 10px 12px 14px 16px rgba(22, 141, 132, .6), -10px -12px 14px 16px rgba(173, 96, 22, 0.7);
+}
+
+.principalEquipo__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.biografia,
+.rol,
+.cita,
+.redesSociales {
+    margin: .5rem 0;
+    width: 100%;
+}
+
+.biografia p,
+.rol p,
+.cita p {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    width: 100%;
+}
+
+.redesSociales h2 {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 50px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: inherit;
+    margin-top: 10px;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #e4405f;
+}
+
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-2xl {
+    font-size: 1.5rem;
+}
+
+.galeriaEquipo {
+    margin-top: 2rem;
+}
+
+.galeriaEquipo h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/*MEDIA QUERYS*/
+@media (width:750px) {}
