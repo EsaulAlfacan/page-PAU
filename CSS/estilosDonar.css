@@ -1,0 +1,175 @@
+/*ESTOS SON LOS ESTILOS GENERALES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-naranja: #AD6016;
+    --color-verde: #168d84;
+    --color-blanco: #fff;
+    --color-negro: #000;
+
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* Estilos específicos del encabezado */
+.button {
+    background-color: var(--color-verde);
+    color: #fff;
+    width: 8.5em;
+    height: 2.9em;
+    border: var(--color-blanco) 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: var(--color-blanco);
+    cursor: pointer;
+    color: var(--color-verde);
+}
+
+.button svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+}
+
+.button:hover svg {
+    transform: translateX(5px);
+}
+
+.text {
+    margin: 0 1.5em
+}
+
+.encabezado {
+    background-color: var(--color-naranja);
+    text-align: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.encabezado__img {
+    width: 220px;
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: var(--color-blanco) solid 5px;
+}
+
+.encabezado__donar {
+    color: var(--color-blanco);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header p {
+    color: var(--color-blanco);
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 10px 35px;
+}
+
+header strong {
+    color: var(--color-negro);
+    font-size: 19px;
+}
+
+header span {
+    color: var(--color-negro);
+}
+
+header a {
+    color: var(--color-verde);
+    text-decoration: none;
+    font-size: 19px;
+
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/*SECCION PRINCIPAL*/
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.buttonA {
+    --color: var(--color-verde);
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+
+.buttonA::before,
+.button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.buttonA::before {
+    top: -1em;
+    left: -1em;
+}
+
+.buttonA::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.buttonA:hover::before,
+.buttonA:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.buttonA:hover {
+    color: var(--color-blanco);
+}
+
+.buttonA:active {
+    filter: brightness(.8);
+}
