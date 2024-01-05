@@ -36,7 +36,7 @@ body {
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: top;
     padding: 30px;
     animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -86,7 +86,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
