@@ -87,7 +87,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 22px;
+    gap: 1.6rem;
     width: 100%;
     height: auto;
 }
