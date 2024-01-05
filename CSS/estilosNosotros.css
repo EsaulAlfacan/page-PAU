@@ -143,14 +143,19 @@ div[id] {
 }
 
 .historia__imagen {
-    max-width: 100%;
+    width: auto;
+    max-width: 600px;
+    min-width: 200px;
+    overflow: hidden;
     display: block;
     margin: 20px auto;
     border-radius: 15px;
 }
 
 .historia__img {
-    width: 600px;
+    max-width: 600px;
+    min-width: 200px;
+    width: auto;
     padding: 10px;
     border-radius: 1px;
     border: solid var(--color-naranja) 10px;
