@@ -60,6 +60,7 @@ body {
     display: none;
     position: absolute;
     min-height: 100vh;
+    max-height: 100vh;
     background-color: var(--color-naranja);
     width: 20%;
     top: 0;
