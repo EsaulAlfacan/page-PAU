@@ -502,9 +502,6 @@ button:hover::before {
         scroll-margin-top: 160px;
     }
 
-    .menuNosotros {
-        top: 90px;
-    }
 
     .historia__contenido {
         display: flex;
@@ -517,5 +514,25 @@ button:hover::before {
         width: auto;
         max-width: 450px;
         min-width: 200px;
+    }
+}
+
+@media (max-width:550px) {
+    .menuNosotros {
+        top: 90px;
+    }
+
+    .historia__img {
+        width: 300px;
+    }
+
+    .vision__img {
+        width: 300px;
+    }
+}
+
+@media (max-width:470px) {
+    .vision__contenido .vision__img {
+        width: 250px;
     }
 }
