@@ -34,7 +34,7 @@ div[id] {
     padding: 10px 10px;
     background-color: var(--color-naranja);
     position: sticky;
-    top: 110px;
+    top: 120px;
     border-bottom: solid var(--color-verde);
     z-index: 700;
 }
@@ -137,6 +137,7 @@ div[id] {
 
 .historia__contenido {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -146,8 +147,6 @@ div[id] {
     display: block;
     margin: 20px auto;
     border-radius: 15px;
-    border: solid var(--color-verde) 10px;
-
 }
 
 .historia__img {
@@ -282,6 +281,7 @@ div[id] {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .historia__titulo {
@@ -319,6 +319,7 @@ div[id] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column-reverse;
     padding: 30px;
 }
 
@@ -339,14 +340,13 @@ div[id] {
 
 .vision__imagen {
     padding: 10px;
-    width: 20%;
     overflow: hidden;
 }
 
 .vision__imagen img {
     width: 400px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 /*EQUIPO*/
@@ -371,7 +371,7 @@ div[id] {
 }
 
 .swiper {
-    width: 30%;
+    width: 60%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -488,4 +488,29 @@ button:hover::before {
 
 .colaboradores__iconos img:hover {
     transform: scale(1.05);
+}
+
+@media (max-width:660px) {
+
+    section[id],
+    div[id] {
+        scroll-margin-top: 160px;
+    }
+
+    .menuNosotros {
+        top: 90px;
+    }
+
+    .historia__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .historia__img {
+        width: auto;
+        max-width: 450px;
+        min-width: 200px;
+    }
 }
