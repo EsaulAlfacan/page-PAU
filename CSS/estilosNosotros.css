@@ -441,6 +441,14 @@ button:hover::before {
 }
 
 /*COLABORADORES*/
+.colaboradores {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .colaboradores__texto {
     background-color: var(--color-blanco);
     color: var(--color-negro);
@@ -468,17 +476,19 @@ button:hover::before {
 }
 
 .colaboradores__iconos {
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
-    padding: 20px;
     background: linear-gradient(to bottom, white, var(--color-verde));
 }
 
 .colaboradores__iconos a {
     display: block;
-    width: 120px;
+    width: auto;
+    margin: 10px 30px;
+
 }
 
 .colaboradores__iconos img {
