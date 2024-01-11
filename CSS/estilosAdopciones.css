@@ -49,14 +49,27 @@ div[id] {
 
 #searching .styled-select {
     margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
 }
 
 #searching .selectpicker {
-    border: 1px solid var(--color-naranja);
+    border: 3px solid var(--color-naranja);
     background-color: var(--color-blanco);
     color: var(--color-negro);
     padding: 10px 10px;
     border-radius: 5px;
+}
+
+.contenedor__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #searching .btn-dark {
@@ -86,12 +99,6 @@ div[id] {
     margin-right: -5px;
 }
 
-#searching .col-12,
-#searching .col-sm-4,
-#searching .col-md-7 {
-    padding-left: 5px;
-    padding-right: 5px;
-}
 
 /* ESTILOS DEL ENCABEZADO */
 .encabezado {
@@ -139,7 +146,7 @@ div[id] {
     background-color: var(--color-blanco);
     color: var(--color-negro);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     padding: 20px;
     max-width: 800px;
     width: 100%;
@@ -156,7 +163,7 @@ div[id] {
 }
 
 .info__adoptar ul {
-    list-style: inside;
+    list-style: none;
     padding-left: 20px;
 }
 

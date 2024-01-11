@@ -90,16 +90,18 @@
                         <div class="col-12 col-sm-4 text-center styled-select">
                             <div class="row p-r-10 p-l-10">
                                 <label for="tipo" class="col-6 col-sm-12">Quiero adoptar un...</label>
-                                <select name="tipo" class="selectpicker show-tick form-control col-6 col-sm-12"
-                                    data-live-search="true" id="selectTipo">
-                                    <option value="0" selected="selected">Todos</option>
-                                    <option value="1">Perro</option>
-                                    <option value="2">Gato</option>
-                                </select>
+
                             </div>
                         </div>
                         <!-- Selección de Ubicación y Tamaño -->
                         <div id="estados" class="col-6 col-sm-4 styled-select">
+                            <select name="tipo" class="selectpicker show-tick form-control col-6 col-sm-12"
+                                data-live-search="true" id="selectTipo">
+                                <option value="0" selected="selected">Todos</option>
+                                <option value="1">Perro</option>
+                                <option value="2">Gato</option>
+                            </select>
+
                             <select name="ubicacion" class="selectpicker show-tick form-control" data-live-search="true"
                                 id="selectUbicacion">
                                 <option value="0" selected="selected">Ubicación</option>
@@ -164,7 +166,7 @@
                 </div>
             </div>
             <!-- Botón de búsqueda -->
-            <div class="col-12 text-right m-t-10 m-b-10">
+            <div class="contenedor__btn col-12 text-right m-t-10 m-b-10">
                 <button class="btn btn-dark">Solicitar <span class="huellitaIcon"></span></button>
             </div>
         </form>

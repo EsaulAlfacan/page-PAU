@@ -29,8 +29,8 @@ document.getElementById('searching').addEventListener('submit', function (event)
     // Codificar el mensaje para la URL
     mensaje = encodeURIComponent(mensaje);
 
-    // Crear el enlace de WhatsApp (reemplaza '1234567890' con tu número de teléfono)
-    var whatsappUrl = "https://wa.me/1234567890?text=" + mensaje;
+    // Crear el enlace de WhatsApp 
+    var whatsappUrl = "https://wa.me/7751171879?text=" + mensaje;
 
     // Abrir el enlace en una nueva ventana/tab
     window.open(whatsappUrl, '_blank');
