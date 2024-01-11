@@ -174,9 +174,14 @@ div[id] {
 .info__adoptar img {
     max-width: 350px;
     min-width: 200px;
-    width: auto;
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+@media (max-width:500px) {
+    .info__adoptar img {
+        width: 250px;
+    }
 }
