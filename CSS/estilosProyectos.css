@@ -36,7 +36,7 @@ header {
     margin: 0 0px 10px 0px;
     border: solid var(--color-naranja) 5px;
     border-radius: 0 0 20px 20px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .principalProyectos {
@@ -61,6 +61,7 @@ header {
     flex-direction: column;
     justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 50px;
 }
 
 .principalProyectos__contenedor:hover {
@@ -90,4 +91,10 @@ header {
     object-fit: cover;
     position: absolute;
     z-index: -1;
+}
+
+@media (max-width:500px) {
+    header {
+        font-size: 10px;
+    }
 }

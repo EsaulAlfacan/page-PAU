@@ -1,0 +1,175 @@
+/*ESTOS SON LOS ESTILOS GENERALES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-naranja: #AD6016;
+    --color-verde: #168d84;
+    --color-blanco: #fff;
+    --color-negro: #000;
+
+}
+
+section[id],
+div[id] {
+    scroll-margin-top: 160px;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* ESTILOS DEL FORMULARIO*/
+#searching {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#searching h2 {
+    color: var(--color-negro);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#searching .styled-select {
+    margin-bottom: 15px;
+}
+
+#searching .selectpicker {
+    border: 1px solid var(--color-naranja);
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+#searching .btn-dark {
+
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#searching .btn-dark:hover {
+    background-color: var(--color-verde);
+}
+
+#searching label {
+    color: var(--color-negro);
+    margin-bottom: 5px;
+    display: block;
+}
+
+#searching .row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+#searching .col-12,
+#searching .col-sm-4,
+#searching .col-md-7 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* ESTILOS DEL ENCABEZADO */
+.encabezado {
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
+    padding: 20px 0;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado__adoptar h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.encabezado__adoptar p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ESTILOS PARA EL CONTENEDOR DE INFORMACIÓN */
+.contenedor__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info__adoptar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.info__adoptar h3 {
+    color: var(--color-naranja);
+    margin-bottom: 10px;
+}
+
+.info__adoptar p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.info__adoptar ul {
+    list-style: inside;
+    padding-left: 20px;
+}
+
+.info__adoptar ul li {
+    margin-bottom: 10px;
+}
+
+.info__adoptar img {
+    max-width: 350px;
+    min-width: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

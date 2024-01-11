@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <!--ETIQUETAS META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#AD6016">
+    <meta name="robots" content="index,follow">
+
+    <!--ETIQUETA TITLE-->
+    <title>PAU | Adopciones</title>
+
+    <!--ETIQUETAS STYLE-->
+    <link rel="stylesheet" href="/CSS/estilosNormalize.css">
+    <link rel="stylesheet" href="/CSS/estilosMenuPrincipal.css">
+    <link rel="stylesheet" href="/CSS/estilosAdopciones.css">
+
+    <!--ETIQUETAS FAVICON-->
+    <link rel="icon" href="/assets/images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#168d84">
+    <meta name="msapplication-TileImage" content="/assets/images/favicons/android-chrome-192x192.png0">
+
+    <!--ETIQUETAS FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="menu" id="menu">
+        <div class="menu__logo"><img src="/assets/images/menu/logotipo.webp" alt="PAU" title="PAU"></div>
+
+        <div class="menu__lista">
+            <ul>
+                <li class="menu__item"><a class="menu__link" href="/index.html">Inicio</a></li>
+                <li class="menu__item"><a class="menu__link" href="/HTML/tienda.html">Tienda</a></li>
+                <li class="menu__item"><a class="menu__link" href="/HTML/transparencia.html">Transparencia</a></li>
+                <li class="menu__item"><a class="menu__link" href="/HTML/nosotros.html">Nosotros</a></li>
+                <li class="menu__item"><a class="menu__link" href="/HTML/proyectos.html">Proyectos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/HTML/adopciones.html">Adopciones</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Blog</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Galería</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Contacto</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Donar</a></li>
+            </ul>
+        </div>
+
+        <div class="menu__icono">
+            <div class="menu__open">
+                <h6 class="menu__titulo">Menú</h6>
+                <i class="menu__y fa-solid fa-bars "></i>
+            </div>
+            <div class="menu__close">
+                <i class="menu__n fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+
+    <header class="encabezado">
+        <div class="contenedor">
+            <section class="encabezado__adoptar">
+                <h1>Transforma una Vida, Adopta un Peludito Fiel</h1>
+                <p>Únete a nuestra misión para darles un hogar lleno de amor.</p>
+            </section>
+        </div>
+    </header>
+
+    <div id="searching" class="container d-block d-md-none">
+        <form action="/mascota/busqueda" method="post">
+            <div class="row">
+                <div class="col-12 text-left">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 style="letter-spacing: 1px;">Encuentra al nuevo integrante de tu familia</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-7">
+                    <div class="row">
+                        <!-- Selección de Tipo de Mascota -->
+                        <div class="col-12 col-sm-4 text-center styled-select">
+                            <div class="row p-r-10 p-l-10">
+                                <label for="tipo" class="col-6 col-sm-12">Quiero adoptar un...</label>
+                                <select name="tipo" class="selectpicker show-tick form-control col-6 col-sm-12"
+                                    data-live-search="true" id="selectTipo">
+                                    <option value="0" selected="selected">Todos</option>
+                                    <option value="1">Perro</option>
+                                    <option value="2">Gato</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Selección de Ubicación y Tamaño -->
+                        <div id="estados" class="col-6 col-sm-4 styled-select">
+                            <select name="ubicacion" class="selectpicker show-tick form-control" data-live-search="true"
+                                id="selectUbicacion">
+                                <option value="0" selected="selected">Ubicación</option>
+                                <option value="1">Aguascalientes</option>
+                                <option value="2">Baja California</option>
+                                <option value="3">Baja California Sur</option>
+                                <option value="4">Campeche</option>
+                                <option value="5">Coahuila de Zaragoza</option>
+                                <option value="6">Colima</option>
+                                <option value="7">Chiapas</option>
+                                <option value="8">Chihuahua</option>
+                                <option value="9">Ciudad de México</option>
+                                <option value="10">Durango</option>
+                                <option value="11">Guanajuato</option>
+                                <option value="12">Guerrero</option>
+                                <option value="13">Hidalgo</option>
+                                <option value="14">Jalisco</option>
+                                <option value="15">México</option>
+                                <option value="16">Michoacán de Ocampo</option>
+                                <option value="17">Morelos</option>
+                                <option value="18">Nayarit</option>
+                                <option value="19">Nuevo León</option>
+                                <option value="20">Oaxaca</option>
+                                <option value="21">Puebla</option>
+                                <option value="22">Querétaro</option>
+                                <option value="23">Quintana Roo</option>
+                                <option value="24">San Luis Potosí</option>
+                                <option value="25">Sinaloa</option>
+                                <option value="26">Sonora</option>
+                                <option value="27">Tabasco</option>
+                                <option value="28">Tamaulipas</option>
+                                <option value="29">Tlaxcala</option>
+                                <option value="30">Veracruz de Ignacio de la Llave</option>
+                                <option value="31">Yucatán</option>
+                                <option value="32">Zacatecas</option>
+                            </select>
+
+                            <select name="tamanio" class="selectpicker show-tick form-control" data-live-search="true"
+                                id="selectTamanio">
+                                <option value="0" selected="selected">Tamaño</option>
+                                <option value="1">Sin preferencia</option>
+                                <option value="2">Chico</option>
+                                <option value="3">Mediano</option>
+                                <option value="4">Grande</option>
+
+
+                            </select>
+                        </div>
+                        <!-- Selección Género -->
+
+
+                        <select name="genero" class="selectpicker show-tick form-control" data-live-search="true"
+                            id="selectGenero">
+                            <option value="0" selected="selected">Sexo</option>
+                            <option value="1">Sin preferencia</option>
+                            <option value="2">Macho</option>
+                            <option value="3">Hembra</option>
+
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Botón de búsqueda -->
+            <div class="col-12 text-right m-t-10 m-b-10">
+                <button class="btn btn-dark">Solicitar <span class="huellitaIcon"></span></button>
+            </div>
+        </form>
+    </div>
+
+    <div class="contenedor__info">
+        <section class="info__adoptar">
+            <p>Adoptar un animal es abrir tu corazón y hogar a un amigo que espera con ansias llenar tus días de alegría
+                y gratitud. Es un simple gesto que marca la diferencia en el mundo para un ser vivo, ofreciéndole amor y
+                un futuro lleno de esperanza. Al adoptar, no solo cambias la vida de un animal, sino que enriqueces la
+                tuya con lealtad, risas y momentos inolvidables. Cada mascota adoptada trae consigo una historia de
+                transformación y felicidad, ¿estás listo para ser parte de esta maravillosa aventura? Tu compañero fiel
+                te espera. ¡Adopta y transforma dos vidas para mejor!</p>
+            <img src="/assets/images/adopciones/adopta-1.png" alt="Adopta con PAU">
+        </section>
+
+        <section class="info__adoptar">
+            <h3>¿Por que adoptar?</h3>
+            <ul>
+                <li><strong>Salvas una Vida:</strong> Proporcionas un hogar amoroso a un animal que podría haber estado
+                    en un refugio o en riesgo de sacrificio.</li>
+                <li><strong>Combates la Sobrepoblación de Mascotas:</strong> Ayudas a reducir el número de animales en
+                    refugios y calles.</li>
+                <li><strong>Mejoras Tu Salud Física y Mental:</strong> Tener una mascota reduce el estrés y promueve un
+                    estilo de vida activo y saludable.</li>
+                <li><strong>Ganas un Compañero Leal:</strong> Los animales adoptados suelen ser extremadamente
+                    agradecidos y leales.</li>
+                <li><strong>Recibes un Animal Evaluado:</strong> Los refugios suelen realizar evaluaciones médicas y de
+                    comportamiento, asegurando que conozcas bien a tu nueva mascota.</li>
+                <li><strong>Apoyas a Organizaciones de Rescate:</strong> Tu adopción ayuda a refugios y organizaciones a
+                    continuar su labor.</li>
+                <li><strong>Ahorras Dinero:</strong> La adopción suele ser menos costosa que comprar una mascota y los
+                    animales a menudo ya vienen con cuidados veterinarios esenciales.</li>
+                <li><strong>Promueves una Ética de Cuidado:</strong> Adoptar refleja un compromiso con el bienestar de
+                    los animales.</li>
+                <li><strong>Amigo para tu Mascota:</strong> Si ya tienes una mascota, adoptar otra puede proporcionarle
+                    un compañero.</li>
+                <li><strong>Satisfacción de Hacer el Bien:</strong> Adoptar ofrece una profunda sensación de realización
+                    al saber que estás haciendo una diferencia.</li>
+            </ul>
+            <img src="/assets/images/adopciones/adopta-collage.webp" alt="Beneficios de adoptar">
+        </section>
+    </div>
+
+
+    <!--ETIQUETAS SCRIPS-->
+    <script src="https://kit.fontawesome.com/347a447390.js" crossorigin="anonymous"></script>
+    <script src="/JS/menu/menu.js"></script>
+    <script src="/JS/adopciones/formulario.js"></script>
+
+</body>
+
+</html>
