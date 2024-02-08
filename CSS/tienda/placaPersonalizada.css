@@ -1,0 +1,66 @@
+.principal {
+   max-width: 800px; /* Ancho máximo del contenido */
+   margin: 0 auto; /* Centrar el contenido */
+   padding: 20px; /* Espacio alrededor del contenido */
+}
+
+.producto__titulo {
+   text-align: center;
+   font-size: 2rem;
+   color: #333; /* Color del texto */
+   margin-bottom: 20px; /* Espacio inferior */
+}
+
+.producto__descripcion {
+   text-align: justify; /* Justificar el texto */
+   margin-bottom: 20px; /* Espacio inferior */
+}
+
+.producto__personalizar {
+   margin-bottom: 40px; /* Espacio inferior */
+}
+
+.personalizar-forma-titulo {
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 1.5rem; /* Tamaño del título */
+}
+
+.personalizar-formas-titulo {
+   font-weight: bold;
+}
+
+.personalizar-formas-img {
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+.personalizar-formas-img img {
+   width: 150px; /* Ajusta el tamaño según sea necesario */
+   margin: 0 10px; /* Espacio entre las imágenes */
+}
+
+.producto-precio {
+   text-align: center;
+   font-size: 1.2rem;
+   margin-bottom: 20px; /* Espacio inferior */
+   color: #007bff; /* Color del texto */
+}
+
+.producto-link {
+   display: block;
+   width: 200px; /* Ajusta el ancho según sea necesario */
+   margin: 0 auto;
+   text-align: center;
+   padding: 10px 20px;
+   background-color: #007bff; /* Color de fondo del botón */
+   color: #fff; /* Color del texto */
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.producto-link:hover {
+   background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
+}
