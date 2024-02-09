@@ -61,6 +61,9 @@ border-radius: 20px;
 }
 
 .opcionFormas {
+display: block;
+width: 200px;
+margin: 0 auto;
   padding: 10px 50PX;
   font-size: 16px;
   border: 2px solid var(--color-naranja);
@@ -72,13 +75,14 @@ border-radius: 20px;
   background-repeat: no-repeat;
   background-position-x: calc(100% - 12px);
   background-position-y: center;
-  margin-top: 10px;
+margin-top: 20px;
 }
 
 .opcionFormas option {
   background-color: var(--color-blanco);
   color: var(--color-negro);
   padding: 12px;
+
 }
 
 .opcionFormas option:checked {
@@ -139,16 +143,18 @@ background-color: var(--color-naranja);
    overflow: hidden;
    max-height: 300px;
    overflow-y: scroll;
+   margin-bottom: 30px;
 }
 
 .subtitulo{
+   margin-top: 35px;
    text-align: center;
    font-size: 1.2rem;
    color: var(--color-negro);
    font-weight: 600;
    padding-bottom: 5px;
    border-bottom: solid 5px var(--color-verde) ;
-
+   border-top: solid 5px var(--color-verde) ;
 }
 
 .subtitulo strong{
