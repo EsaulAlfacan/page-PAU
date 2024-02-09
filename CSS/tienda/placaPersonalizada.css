@@ -53,9 +53,9 @@ body {
 }
 
 .swiper__forma{
+   width: auto;
    margin-top: 20px;
       margin-bottom: 20px;
-
 background-color: var(--color-verde);
 border-radius: 20px;
 }
@@ -68,7 +68,7 @@ background-color: var(--color-naranja);
 }
 
 .swiper__imagen{
-   max-width: 450px;
+   max-width: 250px;
    width: auto;
    margin: 10px;
    border-radius: 25px;
