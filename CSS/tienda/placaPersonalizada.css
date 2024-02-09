@@ -67,10 +67,45 @@ color: var(--color-blanco);
 background-color: var(--color-naranja);
 }
 
+.personalizar-forma-titulo strong{
+   font-size: .7em;
+   color: var(--color-naranja);
+}
+
 .swiper__imagen{
    max-width: 250px;
    width: auto;
    margin: 10px;
    border-radius: 25px;
 }
+
+.datos__finales{
+   margin-top: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.producto-precio strong {
+   text-align: center;
+   font-size: 35px;
+   color: var(--color-verde); /* Color del precio destacado */
+}
+
+.producto-link {
+   display: inline-block;
+   background-color: var(--color-naranja); /* Color de fondo */
+   color: #fff; /* Color del texto */
+   padding: 10px 20px; /* Espaciado interno */
+   text-decoration: none; /* Quitar subrayado del enlace */
+   border-radius: 5px; /* Bordes redondeados */
+   margin-top: 10px; /* Margen superior */
+}
+
+.producto-link:hover {
+   transition: all 1s;
+   background-color: var(--color-verde); /* Cambio de color al pasar el mouse */
+}
+
 
