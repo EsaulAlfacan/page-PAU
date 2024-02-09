@@ -1,10 +1,10 @@
 document.getElementById('enviarWhatsapp').addEventListener('click', function() {
     // Obtener los datos seleccionados e ingresados por el usuario
     const zona = document.getElementById('entrega').value;
-    const nombreDueno = document.getElementById('nombreDueno').value;
-    const nombreMascota = document.getElementById('nombreMascota').value;
-    const telefono1 = document.getElementById('telefono1').value;
-    const telefono2 = document.getElementById('telefono2').value;
+    const nombreDueno = document.getElementById('nombreDueno').value.trim();
+    const nombreMascota = document.getElementById('nombreMascota').value.trim();
+    const telefono1 = document.getElementById('telefono1').value.trim();
+    const telefono2 = document.getElementById('telefono2').value.trim();
     const formaSeleccionada = document.getElementById('opcionesForma').value;
     const coloresSeleccionados = obtenerColoresSeleccionados();
     const aditamentosSeleccionados = obtenerAditamentosSeleccionados();
