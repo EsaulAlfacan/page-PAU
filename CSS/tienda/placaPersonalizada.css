@@ -1,66 +1,76 @@
+/*ESTOS SON LOS ESTILOS GENERALES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+}
+
+:root {
+   --color-naranja: #ad6016;
+   --color-verde: #168d84;
+   --color-blanco: #fff;
+   --color-negro: #000;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
 .principal {
-   max-width: 800px; /* Ancho máximo del contenido */
-   margin: 0 auto; /* Centrar el contenido */
-   padding: 20px; /* Espacio alrededor del contenido */
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
 }
 
 .producto__titulo {
    text-align: center;
    font-size: 2rem;
-   color: #333; /* Color del texto */
-   margin-bottom: 20px; /* Espacio inferior */
+   color: var(--color-naranja);
+   margin-bottom: 20px;
 }
 
 .producto__descripcion {
-   text-align: justify; /* Justificar el texto */
-   margin-bottom: 20px; /* Espacio inferior */
-}
-
-.producto__personalizar {
-   margin-bottom: 40px; /* Espacio inferior */
+   font-size: 1.5em;
+   text-align: justify;
+   margin-bottom: 25px;
 }
 
 .personalizar-forma-titulo {
    text-align: center;
-   margin-bottom: 20px;
-   font-size: 1.5rem; /* Tamaño del título */
+   font-size: 1.5rem;
 }
 
 .personalizar-formas-titulo {
    font-weight: bold;
 }
 
-.personalizar-formas-img {
-   display: flex;
-   justify-content: center;
-   margin-top: 10px;
+.swiper__forma{
+   margin-top: 20px;
+      margin-bottom: 20px;
+
+background-color: var(--color-verde);
+border-radius: 20px;
 }
 
-.personalizar-formas-img img {
-   width: 150px; /* Ajusta el tamaño según sea necesario */
-   margin: 0 10px; /* Espacio entre las imágenes */
+.swiper__tituloMolde{
+font-size: 1.8em;
+font-weight: 900;
+color: var(--color-blanco);
+background-color: var(--color-naranja);
 }
 
-.producto-precio {
-   text-align: center;
-   font-size: 1.2rem;
-   margin-bottom: 20px; /* Espacio inferior */
-   color: #007bff; /* Color del texto */
+.swiper__imagen{
+   max-width: 450px;
+   width: auto;
+   margin: 10px;
+   border-radius: 25px;
 }
 
-.producto-link {
-   display: block;
-   width: 200px; /* Ajusta el ancho según sea necesario */
-   margin: 0 auto;
-   text-align: center;
-   padding: 10px 20px;
-   background-color: #007bff; /* Color de fondo del botón */
-   color: #fff; /* Color del texto */
-   text-decoration: none;
-   border-radius: 5px;
-   transition: background-color 0.3s ease;
-}
-
-.producto-link:hover {
-   background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
-}
