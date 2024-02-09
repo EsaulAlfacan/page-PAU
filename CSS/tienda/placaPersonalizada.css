@@ -90,22 +90,126 @@ background-color: var(--color-naranja);
 .producto-precio strong {
    text-align: center;
    font-size: 35px;
-   color: var(--color-verde); /* Color del precio destacado */
+   color: var(--color-verde); 
 }
 
 .producto-link {
    display: inline-block;
-   background-color: var(--color-naranja); /* Color de fondo */
-   color: #fff; /* Color del texto */
-   padding: 10px 20px; /* Espaciado interno */
-   text-decoration: none; /* Quitar subrayado del enlace */
-   border-radius: 5px; /* Bordes redondeados */
-   margin-top: 10px; /* Margen superior */
+   background-color: var(--color-naranja); 
+   color: var(--color-blanco);
+   padding: 10px 20px; 
+   text-decoration: none; 
+   border-radius: 5px; 
+   margin-top: 10px; 
 }
+
 
 .producto-link:hover {
    transition: all 1s;
-   background-color: var(--color-verde); /* Cambio de color al pasar el mouse */
+   background-color: var(--color-verde); 
 }
 
+.colores {
+   margin-top: 50px;
+}
 
+.personalizar-forma-titulo {
+   background-color: var(--color-blanco); 
+   padding: 20px; 
+   border-radius: 5px; 
+   margin-bottom: 20px;
+}
+
+.personalizar-formas-titulo {
+   font-size: 18px; 
+   color: #333; 
+}
+
+.OpcionColor {
+   font-size: 25px; 
+   color: var(--color-negro); 
+   background-color: var(--color-blanco); 
+   padding: 5px 10px; 
+   border: 1px solid var(--color-verde); 
+   border-radius: 5px; 
+   margin-top: 10px;  
+   text-align: center;
+
+   }
+
+.OpcionColor:hover {
+   background-color: var(--color-negro)
+}
+
+#color {
+   width: 100%; 
+   padding: 10px; 
+   margin-top: 10px;
+}
+
+/* Estilo para el colores */
+.opciones-colores {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.opciones-colores input[type="checkbox"] {
+    display: none; 
+}
+
+label p {
+    justify-content: center;
+    align-items: center;
+   text-align: center; 
+    background-color: green; 
+    padding: 20px 20px; 
+    margin: 0; 
+    border-radius: 5px; 
+}
+
+.opciones-colores label {
+    padding: 10px; 
+    border: 1px solid var(--color-negro); 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.opciones-colores label:hover {
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
+}
+
+/* Estilo para cuando el checkbox está seleccionado */
+.opciones-colores input[type="checkbox"]:checked + label {
+    background-color: var(--color-naranja); 
+    color:var(--color-blanco);
+}
+
+/*Colores*/
+.verde{
+   background-color: green;
+}
+
+.verdeClaro{
+   background-color: lightgreen;
+}
+
+.verdeObscuro{
+ background-color: rgb(0, 82, 0);
+}
+
+.azul{
+   background-color: blue;
+}
+
+.azulClaro{
+   background-color: lightblue;
+}
+
+.azulObscuro{
+   background-color: darkblue;
+}
