@@ -24,15 +24,177 @@ body {
 
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
+/*STYLES buscador XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.contenidoPrincipal__buscador {
+  position: sticky;
+  top: 6.05rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre el input y el botón */
+  padding: 20px;
+  background-color: var(--color-verde);
+}
+
+.contenidoPrincipal__buscador input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--color-naranja);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contenidoPrincipal__buscador button {
+  padding: 10px 20px;
+  background-color: var(--color-naranja);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contenidoPrincipal__buscador button:hover {
+  background-color: var(--color-negro);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/*STYLES header xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
 .encabezadoRedPau {
   height: auto;
   padding: 10px 40px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   margin: 0 0px 10px 0px;
   border: solid var(--color-naranja) 5px;
   border-top: none;
   border-left: none;
   border-right: none;
   border-radius: 0 0 30px 30px;
-  font-size: 13px;
+  font-size: 0.7rem;
+}
+
+.encabezadoRedPau h1 {
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  color: var(--color-naranja);
+}
+
+.encabezadoRedPau__imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 40%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.encabezadoRedPau__imagenes img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*STYLES main XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.contenidoPrincipal__titulos {
+  font-size: 24px;
+  color: var(--color-verde);
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: var(--color-blanco);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contenidoPrincipal {
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  line-height: 1.6;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.mascota {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-verde);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mascota__identidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: var(--color-verde);
+}
+
+.mascota__nombre {
+  color: var(--color-blanco);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mascota__identidad img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.mascota__descripcion {
+  text-align: center;
+  padding: 5px;
+  background-color: var(--color-blanco);
+}
+
+.mascota__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  background-color: var(--color-naranja);
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.mascota__link:hover {
+  background-color: var(--color-verde);
 }

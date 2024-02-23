@@ -1,0 +1,132 @@
+/*ESTOS SON LOS ESTILOS GENERALES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --color-naranja: #ad6016;
+  --color-verde: #168d84;
+  --color-blanco: #fff;
+  --color-negro: #000;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/* Estilos básicos XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+body {
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+  margin: 0;
+}
+
+/* Estilos del encabezado XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.encabezado {
+  text-align: center;
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  padding: 20px;
+  border-bottom: 5px solid var(--color-naranja);
+}
+
+.encabezado__mascota {
+  width: 250px;
+  height: auto;
+  border-radius: 60px;
+  border: 3px solid var(--color-blanco);
+  margin-bottom: 20px;
+}
+
+.encabezado__nombre {
+  margin: 0;
+  font-size: 2em;
+}
+
+.encabezado__seguro a {
+  font-size: 1.3rem;
+  color: var(--color-blanco);
+  text-decoration: underline;
+}
+
+.encabezado__seguro span {
+  color: red;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+/* Estilos del contenido principal XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.contenido {
+  max-width: 800px;
+  margin: auto;
+}
+
+.contenido__section {
+  background-color: var(--color-blanco);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contenido__section h2 {
+  color: var(--color-verde);
+}
+
+.contenido__detalle {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la tabla XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.vacunas__tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.vacunas__tabla,
+.vacunas__tabla th,
+.vacunas__tabla td {
+  border: 1px solid var(--color-negro);
+}
+
+.vacunas__tabla th,
+.vacunas__tabla td {
+  text-align: left;
+  padding: 8px;
+}
+
+.vacunas__tabla th {
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+}
+
+.vacunas__tabla td {
+  background-color: var(--color-blanco);
+}
+
+.vacunas__tabla tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para enlaces, incluidos los de WhatsApp XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+a {
+  color: var(--color-verde);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
