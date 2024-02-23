@@ -121,6 +121,10 @@ body {
   background-color: #f2f2f2;
 }
 
+.qr__mascota {
+  width: 250px;
+}
+
 /* Estilos para enlaces, incluidos los de WhatsApp XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 a {
   color: var(--color-verde);
