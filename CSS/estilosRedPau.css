@@ -28,7 +28,7 @@ body {
 
 .contenidoPrincipal__buscador {
   position: sticky;
-  top: 7.2rem;
+  top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +202,7 @@ body {
 /*MEDIA QUERYS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 @media (max-width: 550px) {
   .contenidoPrincipal__buscador {
-    top: 6rem;
+    top: 3rem;
   }
 }
 
@@ -224,12 +224,12 @@ body {
 
 @media (max-width: 360px) {
   .contenidoPrincipal__buscador {
-    top: 5.5rem;
+    top: 2rem;
   }
 }
 
 @media (max-width: 260px) {
   .contenidoPrincipal__buscador {
-    top: 5rem;
+    top: 1rem;
   }
 }
