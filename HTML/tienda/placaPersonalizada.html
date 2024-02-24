@@ -873,7 +873,7 @@
 
                <option value="Santiago">Santiago (Centro)</option>
 
-               <option value="Santiago">Envío (Costo adicional)</option>
+               <option value="Envío(Costo adicional)">Envío (Costo adicional)</option>
 
             </select>
          </section>
@@ -907,13 +907,27 @@
                placeholder="XXX XXX XX XX"
             >
 
-            <label for="telefono2">Otro Número de Teléfono:</label>
+            <label for="direccionEnvio">Dirección de envío:</label>
+            <textarea
+               id="direccionEnvio"
+               name="direccionEnvio"
+               placeholder="Dirección de envío"
+               rows="4"
+               cols="50"
+            ></textarea>
+
+            <label for="codigoPostal">Código postal:</label>
             <input
-               type="tel"
-               id="telefono2"
-               name="telefono2"
-               placeholder="XXX XXX XX XX"
+               id="codigoPostal"
+               name="codigoPostal"
+               placeholder="Código postal"
+               type="text"
+               pattern="\\d*"
+               title="Por favor, ingresa un código postal válido."
+               maxlength="5"
+               minlength="5"
             >
+
          </section>
 
 
