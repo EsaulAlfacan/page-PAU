@@ -24,7 +24,6 @@
 
 .productos__producto {
   width: auto;
-  max-width: 400px;
   height: 550px;
   display: flex;
   justify-content: center;
@@ -79,4 +78,12 @@
 
 .producto__link:hover {
   background-color: var(--color-verde);
+}
+
+/*MEDIA QUERYS*/
+
+@media (max-width: 620px) {
+  .productos__producto {
+    width: 100%;
+  }
 }
