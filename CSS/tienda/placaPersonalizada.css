@@ -2,384 +2,387 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-   font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
-   --color-naranja: #ad6016;
-   --color-verde: #168d84;
-   --color-blanco: #fff;
-   --color-negro: #000;
+  --color-naranja: #ad6016;
+  --color-verde: #168d84;
+  --color-blanco: #fff;
+  --color-negro: #000;
 }
 
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
 .principal {
-   max-width: 800px;
-   margin: 0 auto;
-   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .producto__titulo {
-   text-align: center;
-   font-size: 2rem;
-   color: var(--color-naranja);
-   margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-naranja);
+  margin-bottom: 20px;
 }
 
 .producto__descripcion {
-   font-size: 1.5em;
-   text-align: justify;
-   margin-bottom: 25px;
+  font-size: 1.5em;
+  text-align: justify;
+  margin-bottom: 25px;
 }
 
 .personalizar-forma-titulo {
-   text-align: center;
-   font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .personalizar-formas-titulo {
-   font-weight: bold;
+  font-weight: bold;
 }
 
-.swiper__forma{
-   width: auto;
-   margin-top: 20px;
-      margin-bottom: 20px;
-background-color: var(--color-verde);
-border-radius: 20px;
+.swiper__forma {
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--color-verde);
+  border-radius: 20px;
 }
 
 .opcionFormas {
-display: flex;
-width: 100%;
-margin: 0 auto;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
   padding: 10px 10px;
   font-size: 16px;
   border: 2px solid var(--color-naranja);
   border-radius: 4px;
   appearance: none;
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
-  background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M5 10l7 7L19 10" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'); 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M5 10l7 7L19 10" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   background-repeat: no-repeat;
   background-position-x: calc(100% - 12px);
   background-position-y: center;
-margin-top: 20px;
+  margin-top: 20px;
 }
 
-.opcionFormas option, .zona option {
+.opcionFormas option,
+.zona option {
   background-color: var(--color-blanco);
   color: var(--color-negro);
   padding: 12px;
-
 }
 
-.opcionFormas option:checked, .zona option:checked{
+.opcionFormas option:checked,
+.zona option:checked {
   background-color: var(--color-verde);
 }
 
-.swiper__tituloMolde{
-font-size: 1.8em;
-font-weight: 900;
-color: var(--color-blanco);
-background-color: var(--color-naranja);
+.swiper__tituloMolde {
+  font-size: 1.8em;
+  font-weight: 900;
+  color: var(--color-blanco);
+  background-color: var(--color-naranja);
 }
 
-.personalizar-forma-titulo strong{
-   font-size: .7em;
-   color: var(--color-naranja);
+.personalizar-forma-titulo strong {
+  font-size: 0.7em;
+  color: var(--color-naranja);
 }
 
-.swiper__imagen{
-   max-width: 250px;
-   width: auto;
-   margin: 10px;
-   border-radius: 25px;
+.swiper__imagen {
+  max-width: 250px;
+  width: auto;
+  margin: 10px;
+  border-radius: 25px;
 }
 
-.datos__finales{
-   margin-top: 15px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+.datos__finales {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .producto-precio strong {
-   text-align: center;
-   font-size: 35px;
-   color: var(--color-verde); 
+  text-align: center;
+  font-size: 35px;
+  color: var(--color-verde);
 }
 
 .producto-link {
-   display: inline-block;
-   background-color: var(--color-naranja); 
-   color: var(--color-blanco);
-   padding: 10px 20px; 
-   text-decoration: none; 
-   border-radius: 5px; 
-   margin-top: 10px; 
+  display: inline-block;
+  background-color: var(--color-naranja);
+  color: var(--color-blanco);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-
 .producto-link:hover {
-   transition: all 1s;
-   background-color: var(--color-verde); 
+  transition: all 1s;
+  background-color: var(--color-verde);
 }
 
 .colores {
-   margin-top: 30px;
-   overflow: hidden;
-   max-height: 300px;
-   overflow-y: scroll;
-   margin-bottom: 30px;
+  margin-top: 30px;
+  overflow: hidden;
+  max-height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 30px;
 }
 
-.subtitulo{
-   margin-top: 35px;
-   text-align: center;
-   font-size: 1.2rem;
-   color: var(--color-negro);
-   font-weight: 600;
-   padding-bottom: 5px;
-   border-bottom: solid 5px var(--color-verde) ;
-   border-top: solid 5px var(--color-verde) ;
+.subtitulo {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--color-negro);
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: solid 5px var(--color-verde);
+  border-top: solid 5px var(--color-verde);
 }
 
-.subtitulo strong{
-   font-size: .9rem;
-   color: var(--color-naranja);
+.subtitulo strong {
+  font-size: 0.9rem;
+  color: var(--color-naranja);
 }
 
 .personalizar-forma-titulo {
-   background-color: var(--color-blanco); 
-   padding: 20px; 
-   border-radius: 5px; 
-   margin-bottom: 20px;
+  background-color: var(--color-blanco);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .personalizar-formas-titulo {
-   font-size: 18px; 
-   color: #333; 
+  font-size: 18px;
+  color: #333;
 }
 
 .OpcionColor {
-   font-size: 25px; 
-   color: var(--color-negro); 
-   background-color: var(--color-blanco); 
-   padding: 5px 10px; 
-   border: 1px solid var(--color-verde); 
-   border-radius: 5px; 
-   margin-top: 10px;  
-   text-align: center;
-
-   }
+  font-size: 25px;
+  color: var(--color-negro);
+  background-color: var(--color-blanco);
+  padding: 5px 10px;
+  border: 1px solid var(--color-verde);
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
 
 .OpcionColor:hover {
-   background-color: var(--color-negro)
+  background-color: var(--color-negro);
 }
 
 #color {
-   width: 100%; 
-   padding: 10px; 
-   margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .opciones-colores {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
 }
 
 .opciones-colores input[type="checkbox"] {
-    display: none; 
+  display: none;
 }
 
 label p {
-    justify-content: center;
-    align-items: center;
-   text-align: center; 
-    background-color: green; 
-    padding: 20px 20px; 
-    margin: 0; 
-    border-radius: 5px; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: green;
+  padding: 20px 20px;
+  margin: 0;
+  border-radius: 5px;
 }
 
 .opciones-colores label {
-    padding: 10px; 
-    border: 1px solid var(--color-negro); 
-    border-radius: 5px; 
-    cursor: pointer;
+  padding: 10px;
+  border: 1px solid var(--color-negro);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .opciones-colores label:hover {
-    background-color: var(--color-verde);
-    color: var(--color-blanco);
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
 }
 
 .opciones-colores input[type="checkbox"]:checked + label {
-    background-color: var(--color-naranja); 
-    color:var(--color-blanco);
+  background-color: var(--color-naranja);
+  color: var(--color-blanco);
 }
 
-.verde{
-   background-color: green;
+.verde {
+  background-color: green;
 }
 
-.verdeClaro{
-   background-color: lightgreen;
+.verdeClaro {
+  background-color: lightgreen;
 }
 
-.verdeObscuro{
- background-color: rgb(0, 82, 0);
+.verdeObscuro {
+  background-color: rgb(0, 82, 0);
 }
 
-.azul{
-   background-color: blue;
+.azul {
+  background-color: blue;
 }
 
-.azulClaro{
-   background-color: lightblue;
+.azulClaro {
+  background-color: lightblue;
 }
 
-.azulObscuro{
-   background-color: darkblue;
+.azulObscuro {
+  background-color: darkblue;
 }
 
-.amarillo{
-   background-color: yellow;
+.amarillo {
+  background-color: yellow;
 }
 
-.amarilloClaro{
-   background-color: rgb(211, 211, 148);
+.amarilloClaro {
+  background-color: rgb(211, 211, 148);
 }
 
-.dorado{
-   background-color: gold;
+.dorado {
+  background-color: gold;
 }
 
-.rojo{
-   background-color: red;
+.rojo {
+  background-color: red;
 }
 
-.rojoChina{
-   background-color: rgb(167, 0, 0);
+.rojoChina {
+  background-color: rgb(167, 0, 0);
 }
 
-.durazno{
-   background-color: rgb(87, 3, 3);
+.durazno {
+  background-color: rgb(87, 3, 3);
 }
 
-.rosaRojizo{
-   background-color: rgb(255, 0, 43);
+.rosaRojizo {
+  background-color: rgb(255, 0, 43);
 }
 
-.rosa{
-   background-color: rgb(179, 68, 86);
+.rosa {
+  background-color: rgb(179, 68, 86);
 }
 
-.fuchsia{
-   background-color: fuchsia;
+.fuchsia {
+  background-color: fuchsia;
 }
 
-.gris{
-   background-color: gray;
+.gris {
+  background-color: gray;
 }
 
-.violeta{
-   background-color: rgb(68, 0, 68);
+.violeta {
+  background-color: rgb(68, 0, 68);
 }
 
-.morado{
-   background-color: purple;
+.morado {
+  background-color: purple;
 }
 
-.naranja{
-   background-color: orange;
+.naranja {
+  background-color: orange;
 }
 
-.cafe{
-   background-color: brown;
+.cafe {
+  background-color: brown;
 }
 
-.blanco{
-   background-color: white;
-   border: solid rgb(192, 188, 188) .5px;
+.blanco {
+  background-color: white;
+  border: solid rgb(192, 188, 188) 0.5px;
 }
 
-.negro{
-   background-color: black;
+.negro {
+  background-color: black;
 }
 
-.aditivo__titulo{
-   font-size: .9rem;
-   display: flex;
-   flex-direction: column;
-text-align: center;
-justify-content: center;
-align-items: center;
+.aditivo__titulo {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.aditivo__img{
-   width: 70px;
-   height: 70px;
-padding: 5px;
-border-radius: 10px;
+.aditivo__img {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
+.zona {
+  margin: 20px;
+}
 
-        .zona {
-            margin: 20px;
-        }
+.zona select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--color-naranja);
+  border-radius: 5px;
+  appearance: none; /* Esto elimina el estilo predeterminado del select en algunos navegadores */
+  -webkit-appearance: none; /* Esto es para navegadores WebKit */
+  -moz-appearance: none; /* Esto es para navegadores Mozilla */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8.293 11.293a1 1 0 011.414 0L10 12.586l.293-.293a1 1 0 011.414 1.414l-1 1a1 1 0 01-1.414 0l-1-1a1 1 0 010-1.414zM8 6a1 1 0 011-1h2a1 1 0 010 2H9a1 1 0 01-1-1zM9 16a1 1 0 110-2h2a1 1 0 110 2H9z"/></svg>'); /* Esto agrega una flecha personalizada */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+  cursor: pointer;
+}
 
-        .zona select {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid var(--color-naranja);
-            border-radius: 5px;
-            appearance: none; /* Esto elimina el estilo predeterminado del select en algunos navegadores */
-            -webkit-appearance: none; /* Esto es para navegadores WebKit */
-            -moz-appearance: none; /* Esto es para navegadores Mozilla */
-            background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8.293 11.293a1 1 0 011.414 0L10 12.586l.293-.293a1 1 0 011.414 1.414l-1 1a1 1 0 01-1.414 0l-1-1a1 1 0 010-1.414zM8 6a1 1 0 011-1h2a1 1 0 010 2H9a1 1 0 01-1-1zM9 16a1 1 0 110-2h2a1 1 0 110 2H9z"/></svg>'); /* Esto agrega una flecha personalizada */
-            background-repeat: no-repeat;
-            background-position: right 10px center;
-            background-size: 18px;
-            cursor: pointer;
-        }
+.contacto {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--color-blanco);
+  border-radius: 10px;
+}
 
-        .contacto {
-            margin: 20px;
-            padding: 20px;
-            background-color: var(--color-blanco);
-            border-radius: 10px;
-        }
+.contacto label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-        .contacto label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
+.contacto input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid var(--color-naranja);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 
-        .contacto input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            font-size: 16px;
-            border: 1px solid var(--color-naranja);
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
+textarea {
+  width: 100%;
+  border: 1px solid var(--color-naranja);
+}

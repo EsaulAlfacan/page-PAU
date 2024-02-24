@@ -874,7 +874,7 @@
 
                <option value="Santiago">Santiago (Centro)</option>
 
-               <option value="Santiago">Envío (Sin costo)</option>
+               <option value="Envío(Sin costo)">Envío (Sin costo)</option>
 
             </select>
          </section>
@@ -907,6 +907,28 @@
                name="telefono1"
                placeholder="XXX XXX XX XX"
             >
+
+            <label for="direccionEnvio">Dirección de envío:</label>
+            <textarea
+               id="direccionEnvio"
+               name="direccionEnvio"
+               placeholder="Dirección de envío"
+               rows="4"
+               cols="50"
+            ></textarea>
+
+            <label for="codigoPostal">Código postal:</label>
+            <input
+               id="codigoPostal"
+               name="codigoPostal"
+               placeholder="Código postal"
+               type="text"
+               pattern="\\d*"
+               title="Por favor, ingresa un código postal válido."
+               maxlength="5"
+               minlength="5"
+            >
+
          </section>
 
 
@@ -928,7 +950,7 @@
    <script src="/JS/menu/menu.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="/JS/tienda/loopPlacaPersonalizada.js"></script>
-   <script src="/JS/tienda/compraPlacaPersonalziada.js"></script>
+   <script src="/JS/tienda/compraPlacaQRindividual.js"></script>
 </body>
 
 </html>
