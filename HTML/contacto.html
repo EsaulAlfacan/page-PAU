@@ -18,7 +18,7 @@
     >
 
     <!--ETIQUETA TITLE-->
-    <title>PAU | Protección Animal Unida</title>
+    <title>PAU | Contacto</title>
 
     <!--ETIQUETAS STYLE-->
     <link
@@ -27,7 +27,7 @@
     >
     <link
         rel="stylesheet"
-        href="/CSS/estilosGaleria.css"
+        href="/CSS/estilosContacto.css"
     >
 
     <!--ETIQUETAS FAVICON-->
@@ -157,10 +157,57 @@
     </div>
 
     <header class="encabezado">
-
+        <h2>Tienes alguna duda, sugerencia o aclaración.</h2>
+        <p>Escribenos por cualquiera de estos medios.</p>
     </header>
 
-    <main class="galeria">
+    <main class="botonera">
+        <h2>Contacto PAU</h2>
+
+        <div class="wrapper">
+            <a
+                class="button"
+                href="#"
+            ><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+        <div class="wrapper">
+            <a
+                class="button"
+                href="#"
+            ><i class="fa-brands fa-facebook"></i></a>
+        </div>
+
+
+        <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+        <svg
+            style="visibility: hidden; position: absolute;"
+            width="0"
+            height="0"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+        >
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="10"
+                        result="blur"
+                    />
+                    <feColorMatrix
+                        in="blur"
+                        mode="matrix"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="goo"
+                    />
+                    <feComposite
+                        in="SourceGraphic"
+                        in2="goo"
+                        operator="atop"
+                    />
+                </filter>
+            </defs>
+        </svg>
 
     </main>
 
