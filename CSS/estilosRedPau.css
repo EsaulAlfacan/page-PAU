@@ -28,7 +28,7 @@ body {
 
 .contenidoPrincipal__buscador {
   position: sticky;
-  top: 6.05rem;
+  top: 7.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,4 +197,39 @@ body {
 
 .mascota__link:hover {
   background-color: var(--color-verde);
+}
+
+/*MEDIA QUERYS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@media (max-width: 550px) {
+  .contenidoPrincipal__buscador {
+    top: 6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .mascota {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .mascota__identidad {
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .mascota__link {
+    width: 50%;
+  }
+}
+
+@media (max-width: 360px) {
+  .contenidoPrincipal__buscador {
+    top: 5.5rem;
+  }
+}
+
+@media (max-width: 260px) {
+  .contenidoPrincipal__buscador {
+    top: 5rem;
+  }
 }
