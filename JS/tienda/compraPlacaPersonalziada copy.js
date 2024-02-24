@@ -32,7 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const aditamentosSeleccionados = obtenerAditamentosSeleccionados();
 
       // Construir el mensaje de WhatsApp
-      let mensaje = `Zona: ${encodeURIComponent(zona)}
+      let mensaje = `PLACA DE RESINA CON DATOS
+Zona: ${encodeURIComponent(zona)}
 Nombre del dueño de la mascota: ${encodeURIComponent(nombreDueno)}
 Nombre de la mascota: ${encodeURIComponent(nombreMascota)}
 Dirección de envío: ${encodeURIComponent(direccionEnvio)}
