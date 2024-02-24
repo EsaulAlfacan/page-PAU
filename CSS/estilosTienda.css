@@ -24,6 +24,7 @@
 
 .productos__producto {
   width: auto;
+  max-width: 400px;
   height: 550px;
   display: flex;
   justify-content: center;
