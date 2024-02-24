@@ -30,13 +30,13 @@ body {
 }
 
 .menu {
-  max-height: 100vh;
+  height: auto;
   background-color: var(--color-verde);
   position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 5px 30px;
   animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
