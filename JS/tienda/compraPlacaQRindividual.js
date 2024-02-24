@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Construir el mensaje de WhatsApp
       let mensaje = `PLACA DE RESINA + QR (INDIVIDUAL)
+      
 Zona: ${encodeURIComponent(zona)}
 Nombre del dueño de la mascota: ${encodeURIComponent(nombreDueno)}
 Nombre de la mascota: ${encodeURIComponent(nombreMascota)}
