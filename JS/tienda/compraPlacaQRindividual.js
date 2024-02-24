@@ -32,8 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const aditamentosSeleccionados = obtenerAditamentosSeleccionados();
 
       // Construir el mensaje de WhatsApp
-      let mensaje = `PLACA DE RESINA + QR (INDIVIDUAL)
-      
+      let mensaje = `PLACA DE RESINA + QR (INDIVIDUAL) $149 mxm \n
 Zona: ${encodeURIComponent(zona)}
 Nombre del dueño de la mascota: ${encodeURIComponent(nombreDueno)}
 Nombre de la mascota: ${encodeURIComponent(nombreMascota)}
