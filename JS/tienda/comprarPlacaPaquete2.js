@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Selecciona el input dentro de #placa1
-  let toggle = document.querySelector('#placa1 input[type="checkbox"]');
+  let toggle = document.querySelector('#placa2 input[type="checkbox"]');
 
   // Selecciona la sección que quieres mostrar/ocultar
-  let placaData = document.querySelector("#pd1");
+  let placaData = document.querySelector("#pd2");
 
   // Selecciona el botón por su ID
-  let btnPlaca1 = document.getElementById("btnPlaca1");
+  let btnPlaca1 = document.getElementById("btnPlaca2");
 
   // Agrega un controlador de eventos para el cambio de estado del toggle
   toggle.addEventListener("change", function () {

@@ -182,3 +182,17 @@ body {
   display: none;
   flex-direction: column;
 }
+
+.infoAdicional {
+  padding: 2rem 5rem;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.infoAdicional input {
+  border: solid var(--color-naranja) 1px;
+}
