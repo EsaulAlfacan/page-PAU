@@ -96,6 +96,61 @@ body {
   transform: translateX(40px);
 }
 
+.btn {
+  --color2: rgb(10, 25, 30);
+  padding: 0.8em 1.75em;
+  background-color: var(--color-naranja);
+  border-radius: 6px;
+  border: 0.3px solid var(--color-naranja);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: var(--color-negro);
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color-verde);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color-blanco);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
 /*ESTILOS DE .placa xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 .principalContenido {
   width: 100%;
@@ -121,6 +176,9 @@ body {
 }
 
 .placa__data {
+  border: solid 1px var(--color-negro);
+  border-radius: 10px;
+  padding: 10px;
   display: none;
   flex-direction: column;
 }
