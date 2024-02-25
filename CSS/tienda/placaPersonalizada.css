@@ -103,7 +103,7 @@ body {
 }
 
 .swiper__imagen {
-  max-width: 250px;
+  max-width: 200px;
   width: auto;
   margin: 10px;
   border-radius: 25px;
@@ -218,7 +218,8 @@ label p {
 }
 
 .opciones-colores label {
-  padding: 10px;
+  font-size: 0.7rem;
+  padding: 2px;
   border: 1px solid var(--color-negro);
   border-radius: 5px;
   cursor: pointer;
@@ -324,6 +325,7 @@ label p {
 }
 
 .aditivo__titulo {
+  max-width: 4rem;
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
@@ -333,9 +335,9 @@ label p {
 }
 
 .aditivo__img {
-  width: 70px;
-  height: 70px;
-  padding: 5px;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
   border-radius: 10px;
 }
 

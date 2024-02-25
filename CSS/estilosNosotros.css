@@ -537,7 +537,7 @@ button:hover::before {
   .menuNosotros {
     top: 30px;
   }
-
+}
 
 @media (max-width: 470px) {
   .vision__contenido .vision__img {
