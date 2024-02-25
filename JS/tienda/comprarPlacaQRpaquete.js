@@ -2,79 +2,91 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("enviarWhatsapp")
     .addEventListener("click", function (event) {
-      event.preventDefault(); // Previene el comportamiento por defecto para asegurar la validación
+      event.preventDefault();
 
-      // Obtener los datos seleccionados e ingresados por el usuario
-      const zona = document.getElementById("entrega")
-        ? document.getElementById("entrega").value
-        : "";
-      const nombreDueno = document.getElementById("nombreDueno").value.trim();
-      const nombreMascota = document
-        .getElementById("nombreMascota")
-        .value.trim();
       const direccionEnvio = document
         .getElementById("direccionEnvio")
         .value.trim();
       const codigoPostal = document.getElementById("codigoPostal").value.trim();
-      const telefono1 = document.getElementById("telefono1").value.trim();
 
-      if (
-        !nombreDueno ||
-        !nombreMascota ||
-        !telefono1 ||
-        !direccionEnvio ||
-        !codigoPostal
-      ) {
-        alert("Por favor, completa todos los campos requeridos.");
-        return; // Detiene la ejecución si algún campo requerido está vacío
+      // Verifica la dirección de envío y el código postal
+      if (!direccionEnvio || !codigoPostal) {
+        alert("Por favor, completa la dirección de envío y el código postal.");
+        return;
       }
 
-      const formaSeleccionada = document.getElementById("opcionesForma").value;
-      const coloresSeleccionados = obtenerColoresSeleccionados();
-      const aditamentosSeleccionados = obtenerAditamentosSeleccionados();
+      let mensajeCompleto = "Detalles de la orden:\n\n";
+      let todosLosDatosCompletos = true;
 
-      // Construir el mensaje de WhatsApp
-      let mensaje = `PLACA DE RESINA + QR (INDIVIDUAL) $149 mxm \n
-Zona: ${encodeURIComponent(zona)}
-Nombre del dueño de la mascota: ${encodeURIComponent(nombreDueno)}
-Nombre de la mascota: ${encodeURIComponent(nombreMascota)}
-Dirección de envío: ${encodeURIComponent(direccionEnvio)}
-Código postal: ${encodeURIComponent(codigoPostal)}
-Número de Teléfono: ${encodeURIComponent(telefono1)}
-Forma seleccionada: ${encodeURIComponent(formaSeleccionada)}
-Colores seleccionados:${coloresSeleccionados
-        .map((color) => `\n- ${encodeURIComponent(color)}`)
-        .join("")}
-Aditivos seleccionados:${aditamentosSeleccionados
-        .map((aditamento) => `\n- ${encodeURIComponent(aditamento)}`)
-        .join("")}`;
+      for (let i = 1; i <= 3; i++) {
+        // Solo proceder si la placa está activada
+        if (document.getElementById(`placa${i}`).checked) {
+          const datosPlaca = obtenerDatosPlaca(i);
+          if (datosPlaca) {
+            mensajeCompleto += `Placa ${i}:\n${datosPlaca}\n\n`;
+          } else {
+            todosLosDatosCompletos = false;
+            break;
+          }
+        }
+      }
 
-      // Crear la URL para enviar el mensaje por WhatsApp
-      const url = `https://api.whatsapp.com/send?phone=7751171879&text=${encodeURIComponent(
-        mensaje
+      if (!todosLosDatosCompletos) {
+        alert(
+          "Por favor, completa todos los campos para las placas activadas."
+        );
+        return;
+      }
+
+      mensajeCompleto += `Dirección de envío: ${direccionEnvio}\nCódigo postal: ${codigoPostal}`;
+
+      // Construye la URL para enviar el mensaje por WhatsApp
+      const urlWhatsApp = `https://api.whatsapp.com/send?phone=+5217751171879&text=${encodeURIComponent(
+        mensajeCompleto
       )}`;
-
-      // Abrir la URL en una nueva pestaña
-      window.open(url);
+      window.open(urlWhatsApp, "_blank");
     });
 });
 
-function obtenerColoresSeleccionados() {
-  const checkboxes = document.querySelectorAll(
-    '.personalizar-forma-titulo.colores input[name="colores"]:checked'
+function obtenerDatosPlaca(numPlaca) {
+  const nombreDueno = document
+    .getElementById(`nombreDueno${numPlaca}`)
+    .value.trim();
+  const nombreMascota = document
+    .getElementById(`nombreMascota${numPlaca}`)
+    .value.trim();
+  const telefono = document.getElementById(`telefono${numPlaca}`).value.trim();
+  const formaSeleccionada = document.getElementById(
+    `opcionesForma${numPlaca}`
+  ).value;
+  const coloresSeleccionados = obtenerSeleccionados(`colores${numPlaca}`);
+  const aditamentosSeleccionados = obtenerSeleccionados(
+    `aditamento${numPlaca}`
   );
-  const coloresSeleccionados = Array.from(checkboxes).map(
-    (checkbox) => checkbox.value
-  );
-  return coloresSeleccionados;
+
+  // Verifica que todos los campos estén completos
+  if (
+    !nombreDueno ||
+    !nombreMascota ||
+    !telefono ||
+    formaSeleccionada === "Default" ||
+    coloresSeleccionados.length === 0 ||
+    aditamentosSeleccionados.length === 0
+  ) {
+    return null; // Retorna null si algún campo está incompleto
+  }
+
+  // Construye y retorna el mensaje para la placa actual
+  return `Nombre del dueño: ${nombreDueno}
+Nombre de la mascota: ${nombreMascota}
+Número de Teléfono: ${telefono}
+Forma seleccionada: ${formaSeleccionada}
+Colores seleccionados: ${coloresSeleccionados.join(", ")}
+Aditamentos seleccionados: ${aditamentosSeleccionados.join(", ")}`;
 }
 
-function obtenerAditamentosSeleccionados() {
-  const checkboxes = document.querySelectorAll(
-    '.opciones-colores input[name="aditamento"]:checked'
-  );
-  const aditamentosSeleccionados = Array.from(checkboxes).map(
-    (checkbox) => checkbox.value
-  );
-  return aditamentosSeleccionados;
+function obtenerSeleccionados(nombreGrupo) {
+  return Array.from(
+    document.querySelectorAll(`input[name="${nombreGrupo}"]:checked`)
+  ).map((el) => el.nextSibling.textContent.trim());
 }
