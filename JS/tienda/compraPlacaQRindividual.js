@@ -2,9 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("enviarWhatsapp")
     .addEventListener("click", function (event) {
-      event.preventDefault(); // Previene el comportamiento por defecto para asegurar la validación
+      event.preventDefault();
 
-      // Obtener los datos seleccionados e ingresados por el usuario
       const zona = document.getElementById("entrega").value;
       const nombreDueno = document.getElementById("nombreDueno").value.trim();
       const nombreMascota = document
@@ -24,55 +23,38 @@ document.addEventListener("DOMContentLoaded", function () {
         !codigoPostal
       ) {
         alert("Por favor, completa todos los campos requeridos.");
-        return; // Detiene la ejecución si algún campo requerido está vacío
+        return;
       }
 
       const formaSeleccionada = document.getElementById("opcionesForma").value;
       const coloresSeleccionados = obtenerColoresSeleccionados();
       const aditamentosSeleccionados = obtenerAditamentosSeleccionados();
 
-      // Construir el mensaje de WhatsApp
-      let mensaje = `PLACA DE RESINA + QR (INDIVIDUAL) $149 mxm \n
-Zona: ${encodeURIComponent(zona)}
-Nombre del dueño de la mascota: ${encodeURIComponent(nombreDueno)}
-Nombre de la mascota: ${encodeURIComponent(nombreMascota)}
-Dirección de envío: ${encodeURIComponent(direccionEnvio)}
-Código postal: ${encodeURIComponent(codigoPostal)}
-Número de Teléfono: ${encodeURIComponent(telefono1)}
-Forma seleccionada: ${encodeURIComponent(formaSeleccionada)}
-Colores seleccionados:${coloresSeleccionados
-        .map((color) => `\n- ${encodeURIComponent(color)}`)
-        .join("")}
-Aditivos seleccionados:${aditamentosSeleccionados
-        .map((aditamento) => `\n- ${encodeURIComponent(aditamento)}`)
+      let mensaje = `PLACA DE RESINA + QR (INDIVIDUAL) $119.99 mxm\n\nZona: ${zona}\nNombre del dueño de la mascota: ${nombreDueno}\nNombre de la mascota: ${nombreMascota}\nDirección de envío: ${direccionEnvio}\nCódigo postal: ${codigoPostal}\nNúmero de Teléfono: ${telefono1}\nForma seleccionada: ${formaSeleccionada}\nColores seleccionados:${coloresSeleccionados
+        .map((color) => `\n- ${color}`)
+        .join("")}\nAditivos seleccionados:${aditamentosSeleccionados
+        .map((aditamento) => `\n- ${aditamento}`)
         .join("")}`;
 
-      // Crear la URL para enviar el mensaje por WhatsApp
       const url = `https://api.whatsapp.com/send?phone=7751171879&text=${encodeURIComponent(
         mensaje
       )}`;
-
-      // Abrir la URL en una nueva pestaña
-      window.open(url);
+      window.open(url, "_blank");
     });
 });
 
 function obtenerColoresSeleccionados() {
-  const checkboxes = document.querySelectorAll(
-    '.personalizar-forma-titulo.colores input[name="colores"]:checked'
-  );
-  const coloresSeleccionados = Array.from(checkboxes).map(
-    (checkbox) => checkbox.value
-  );
-  return coloresSeleccionados;
+  return Array.from(
+    document.querySelectorAll(
+      '.personalizar-forma-titulo.colores input[name="colores"]:checked'
+    )
+  ).map((checkbox) => checkbox.value);
 }
 
 function obtenerAditamentosSeleccionados() {
-  const checkboxes = document.querySelectorAll(
-    '.opciones-colores input[name="aditamento"]:checked'
-  );
-  const aditamentosSeleccionados = Array.from(checkboxes).map(
-    (checkbox) => checkbox.value
-  );
-  return aditamentosSeleccionados;
+  return Array.from(
+    document.querySelectorAll(
+      '.opciones-colores input[name="aditamento"]:checked'
+    )
+  ).map((checkbox) => checkbox.value);
 }
