@@ -199,6 +199,29 @@ body {
   background-color: var(--color-verde);
 }
 
+.btn__registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-naranja);
+  margin: 10px;
+  color: var(--color-blanco); /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: 4px; /* Bordes redondeados */
+  text-align: center;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 1rem;
+  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de color de fondo */
+}
+
+.btn__registro:hover {
+  background-color: var(--color-verde);
+  transition: all 1s;
+}
+
 /*MEDIA QUERYS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 @media (max-width: 550px) {
   .contenidoPrincipal__buscador {

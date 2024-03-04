@@ -1,0 +1,124 @@
+/*ESTOS SON LOS ESTILOS GENERALES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --color-naranja: #ad6016;
+  --color-verde: #168d84;
+  --color-blanco: #fff;
+  --color-negro: #000;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* Estilos del header */
+.header {
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos principales */
+.main {
+  background-color: var(--color-blanco);
+  padding: 2.5rem;
+}
+
+/* Estilos de la sección de registro */
+.registration {
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--color-blanco);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos de formulario */
+form > h2 {
+  color: var(--color-negro);
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin: 5px 0px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea,
+select,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+}
+
+input[type="submit"] {
+  justify-content: center;
+  background-color: var(--color-naranja);
+  color: var(--color-blanco);
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--color-verde);
+  transition: all 1s;
+}
+
+/* Ajustes para la visualización de los checkboxes y campos de fecha */
+.form-checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-checkbox-group label,
+.form-checkbox-group input[type="date"] {
+  margin-right: 10px;
+}
+
+.nota {
+  margin-top: -15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Mejoras de responsividad */
+@media (max-width: 768px) {
+  .registration {
+    padding: 10px;
+  }
+
+  .form-checkbox-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

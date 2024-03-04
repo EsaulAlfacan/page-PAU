@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Formulario | PAU</title>
+
+    <link
+        rel="stylesheet"
+        href="/CSS/estilosFormulario.css"
+    >
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__title">Bienvenido al Registro de Mascotas</h1>
+    </header>
+
+    <main class="main">
+        <section class="registration">
+            <form
+                action="/ruta_para_procesar_formulario"
+                method="post"
+            >
+                <h2>Información del Dueño</h2>
+                <label for="nombreCompleto">Nombre Completo:</label><br>
+                <input
+                    type="text"
+                    id="nombreCompleto"
+                    name="nombreCompleto"
+                    required
+                ><br>
+
+                <label for="numeroCelular">Número de Celular:</label><br>
+                <input
+                    type="tel"
+                    id="numeroCelular"
+                    name="numeroCelular"
+                    required
+                ><br>
+
+                <label for="estado">Estado:</label><br>
+                <input
+                    type="text"
+                    id="estado"
+                    name="estado"
+                    required
+                ><br>
+
+                <label for="ciudad">Ciudad:</label><br>
+                <input
+                    type="text"
+                    id="ciudad"
+                    name="ciudad"
+                    required
+                ><br>
+
+                <h2>Información de la Mascota</h2>
+                <label for="nombreMascota">Nombre de la Mascota:</label><br>
+                <input
+                    type="text"
+                    id="nombreMascota"
+                    name="nombreMascota"
+                    required
+                ><br>
+
+                <label for="raza">Raza:</label><br>
+                <input
+                    type="text"
+                    id="raza"
+                    name="raza"
+                    required
+                ><br>
+
+                <label for="edad">Edad:</label><br>
+                <input
+                    type="number"
+                    id="edad"
+                    name="edad"
+                    min="0"
+                    required
+                ><br>
+
+                <label for="tamano">Tamaño:</label><br>
+                <input
+                    type="text"
+                    id="tamano"
+                    name="tamano"
+                    required
+                ><br>
+
+                <label for="peso">Peso:</label><br>
+                <input
+                    type="number"
+                    id="peso"
+                    name="peso"
+                    step="0.01"
+                    required
+                ><br>
+
+                <label for="color">Color:</label><br>
+                <input
+                    type="text"
+                    id="color"
+                    name="color"
+                    required
+                ><br>
+
+                <label for="caracteristicaDistintiva">Característica Distintiva:</label><br>
+                <textarea
+                    id="caracteristicaDistintiva"
+                    name="caracteristicaDistintiva"
+                    required
+                ></textarea><br>
+
+                <h2>Información de Vacunas</h2>
+                <p class="nota">Marca con las casillas correspondientes a las vacunas que tiene tu mascota e indica la
+                    fecha de
+                    aplicación.</p>
+                <div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="parvovirus"
+                            name="vacunasParvovirus"
+                            value="Parvovirus"
+                        >
+                        <label for="parvovirus">Parvovirus</label>
+                        <input
+                            type="date"
+                            id="fechaParvovirus"
+                            name="fechaParvovirus"
+                        >
+                    </div><br>
+
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="moquillo"
+                            name="vacunasMoquillo"
+                            value="Moquillo"
+                        >
+                        <label for="moquillo">Moquillo</label>
+                        <input
+                            type="date"
+                            id="fechaMoquillo"
+                            name="fechaMoquillo"
+                        >
+                    </div><br>
+
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="rabia"
+                            name="vacunasRabia"
+                            value="Rabia"
+                        >
+                        <label for="rabia">Rabia</label>
+                        <input
+                            type="date"
+                            id="fechaRabia"
+                            name="fechaRabia"
+                        >
+                    </div><br>
+
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="tripleFelina"
+                            name="vacunasTripleFelina"
+                            value="Triple Felina"
+                        >
+                        <label for="tripleFelina">Triple Felina</label>
+                        <input
+                            type="date"
+                            id="fechaTripleFelina"
+                            name="fechaTripleFelina"
+                        >
+                    </div><br>
+
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="feLV"
+                            name="vacunasFeLV"
+                            value="FeLV"
+                        >
+                        <label for="feLV">FeLV</label>
+                        <input
+                            type="date"
+                            id="fechaFeLV"
+                            name="fechaFeLV"
+                        >
+                    </div>
+                </div>
+
+                <label for="tipoMascota">Tipo de Mascota:</label><br>
+                <select
+                    id="tipoMascota"
+                    name="tipoMascota"
+                    required
+                >
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                </select><br>
+
+                <h2>Foto de tu Mascota</h2>
+                <label for="fotoMascota">Sube la foto de tu mascota que más te guste:</label><br>
+                <input
+                    type="file"
+                    id="fotoMascota"
+                    name="fotoMascota"
+                    accept="image/*"
+                ><br>
+
+                <input
+                    type="submit"
+                    value="Enviar"
+                >
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
