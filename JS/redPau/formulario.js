@@ -62,9 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Envío del mensaje a WhatsApp
     // Nota: Asegúrate de cambiar "1234567890" por tu número de teléfono donde quieras recibir los mensajes
-    const whatsappURL = `https://wa.me/7751171879?text=${encodeURIComponent(
-      mensaje
-    )}`;
+    const whatsappURL = `https://wa.me/7751171879?text=${mensaje}`;
     window.open(whatsappURL, "_blank");
   });
 });
