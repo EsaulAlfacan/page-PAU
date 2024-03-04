@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const coloresSeleccionados = obtenerColoresSeleccionados();
       const aditamentosSeleccionados = obtenerAditamentosSeleccionados();
 
-      let mensaje = `PLACA DE RESINA + QR (INDIVIDUAL) $119.99 mxm\n\nZona: ${zona}\nNombre del dueño de la mascota: ${nombreDueno}\nNombre de la mascota: ${nombreMascota}\nDirección de envío: ${direccionEnvio}\nCódigo postal: ${codigoPostal}\nNúmero de Teléfono: ${telefono1}\nForma seleccionada: ${formaSeleccionada}\nColores seleccionados:${coloresSeleccionados
+      let mensaje = `PLACA DE RESINA + QR (INDIVIDUAL) $59.99 mxm\n\nZona: ${zona}\nNombre del dueño de la mascota: ${nombreDueno}\nNombre de la mascota: ${nombreMascota}\nDirección de envío: ${direccionEnvio}\nCódigo postal: ${codigoPostal}\nNúmero de Teléfono: ${telefono1}\nForma seleccionada: ${formaSeleccionada}\nColores seleccionados:${coloresSeleccionados
         .map((color) => `\n- ${color}`)
         .join("")}\nAditivos seleccionados:${aditamentosSeleccionados
         .map((aditamento) => `\n- ${aditamento}`)
