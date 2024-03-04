@@ -28,11 +28,43 @@ document.addEventListener("DOMContentLoaded", function () {
     mensaje += `Raza: ${raza}, Edad: ${edad} años, Tamaño: ${tamano}, Peso: ${peso} kg, Color: ${color}%0A`;
     mensaje += `Característica distintiva: ${caracteristicaDistintiva}%0A`;
 
-    // Agregar aquí la captura de la información de vacunas si es necesario
+    // Captura de información de vacunas
+    const vacunasSeleccionadas = [];
+    const vacunas = [
+      { id: "parvovirus", fechaId: "fechaParvovirus", nombre: "Parvovirus" },
+      { id: "moquillo", fechaId: "fechaMoquillo", nombre: "Moquillo" },
+      { id: "rabia", fechaId: "fechaRabia", nombre: "Rabia" },
+      {
+        id: "tripleFelina",
+        fechaId: "fechaTripleFelina",
+        nombre: "Triple Felina",
+      },
+      { id: "feLV", fechaId: "fechaFeLV", nombre: "FeLV" },
+    ];
+
+    vacunas.forEach((vacuna) => {
+      const checkbox = document.getElementById(vacuna.id);
+      const fechaVacuna = document.getElementById(vacuna.fechaId).value;
+      if (checkbox.checked) {
+        let mensajeVacuna = `${vacuna.nombre}`;
+        if (fechaVacuna) {
+          mensajeVacuna += ` (Fecha: ${fechaVacuna})`;
+        }
+        vacunasSeleccionadas.push(mensajeVacuna);
+      }
+    });
+
+    if (vacunasSeleccionadas.length > 0) {
+      mensaje += `Vacunas aplicadas: ${vacunasSeleccionadas.join(", ")}%0A`;
+    } else {
+      mensaje += `Vacunas aplicadas: Ninguna%0A`;
+    }
 
     // Envío del mensaje a WhatsApp
-    // Nota: Cambia el "1234567890" por tu número de teléfono donde quieras recibir los mensajes
-    const whatsappURL = `https://wa.me/7751171879?text=${mensaje}`;
+    // Nota: Asegúrate de cambiar "1234567890" por tu número de teléfono donde quieras recibir los mensajes
+    const whatsappURL = `https://wa.me/7751171879?text=${encodeURIComponent(
+      mensaje
+    )}`;
     window.open(whatsappURL, "_blank");
   });
 });
