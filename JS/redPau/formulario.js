@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nombreMascota = document.getElementById("nombreMascota").value;
     const raza = document.getElementById("raza").value;
     const edad = document.getElementById("edad").value;
+    const esterilizado = document.getElementById("esterilizado").value;
     const tamano = document.getElementById("tamano").value;
     const peso = document.getElementById("peso").value;
     const color = document.getElementById("color").value;
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mensaje += `Número de celular: ${numeroCelular}%0A`;
     mensaje += `Estado: ${estado}, Ciudad: ${ciudad}%0A`;
     mensaje += `Tipo de mascota: ${tipoMascota}, Nombre de la mascota: ${nombreMascota}%0A`;
-    mensaje += `Raza: ${raza}, Edad: ${edad} años, Tamaño: ${tamano}, Peso: ${peso} kg, Color: ${color}%0A`;
+    mensaje += `Raza: ${raza}, Edad: ${edad} años, Esterilizado: ${esterilizado} , Tamaño: ${tamano}, Peso: ${peso} kg, Color: ${color}%0A`;
     mensaje += `Característica distintiva: ${caracteristicaDistintiva}%0A`;
 
     // Captura de información de vacunas
